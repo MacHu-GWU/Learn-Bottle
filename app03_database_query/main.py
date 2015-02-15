@@ -117,4 +117,5 @@ def result():
         
     return bottle.template("result.tpl", {"records": records})
 
-bottle.run(host='localhost', port=7777, debug=True)
+if __name__ == "__main__":
+    bottle.run(host='localhost', port=7777, debug=True)
